@@ -1,0 +1,104 @@
+body {
+  background-color: #EEEEE0;
+  font-family: 'Lato', sans-serif;
+  color: #2C6568;
+}
+
+a {
+  color: #1C4244;
+}
+
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  width: 545px;
+  margin: 100px auto;
+}
+
+p.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro {
+  width: 545px;
+  margin: 50px auto;
+}
+
+.score {
+  float: right;
+  background-color: #b5e8ec;
+  margin-right: 2px;
+  padding: .8rem;
+  border-radius: 5px;
+  margin-top: -55px;
+}
+
+.container {
+  width: 492px;
+  border: 0px solid black;
+  margin: 25px auto;
+  padding: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #5F5F5F;
+}
+
+div div {
+  width: 100px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-size: 3rem;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(238, 238, 224);
+  font-family: 'Alegreya Sans SC', sans-serif;
+  padding-top: 1rem;
+}
+
+.two {
+  background-color: #B5CFB5;
+}
+
+.four {
+  background-color: #71C671;
+}
+
+.eight {
+  background-color: #549354;
+}
+
+.sixteen {
+  background-color: #284628;
+}
+
+.thirtytwo {
+  background-color: #4CAEB5;
+}
+
+.sixtyfour {
+  background-color: #2C6568;
+}
+
+.onetwoeight {
+ background-color: #F38240;
+}
+
+.twofivesix {
+  background-color: #E3A03B;
+}
+
+.fivetwelve {
+  background-color: #E85200;
+}
+
+.tentwentyfour {
+  background-color: #E80070;
+}
+
+.winner {
+  background-color: #B5E8EC;
+}
+

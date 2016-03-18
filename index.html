@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    normalize.css removes cross-browser differences in defaults, e.g.,
+    differences in how form elements appear between Firefox and IE
+    See: http://necolas.github.com/normalize.css/
+  -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!--
+    application.css is where you put your styles
+  -->
+  <link rel="stylesheet" href="css/application.css">
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+  <script src="https:////ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/mousetrap.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/application.js"></script>
+
+  <title>2048 with Color</title>
+</head>
+<body>
+
+  <div class="intro">
+    <h1>2048 With Color</h1><span class="score"><p class="center">Score</p><p class="center" id="score">0</p></span>
+    <p>Use your arrow keys to move the tiles and get to 2048!</p>
+  </div>
+
+  <div class="container">
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+
+  <footer>
+    <p>Coded from scratch by <a href="http://ryanfsalerno.com">Ryan F. Salerno</a>. Based on the original <a href="https://gabrielecirulli.github.io/2048/">2048 game</a> by <a href="http://gabrielecirulli.com/">Gabriele Cirulli</a>.</p>
+    <p>Written using Underscore.js for enumerable object manipulation, jQuery for key bindings, and vanilla JavaScript for the bulk of the game logic.</p>
+  </footer>
+
+</body>
+</html>
