@@ -3,6 +3,7 @@ function Game() {
   // this.board = [2,2,0,2,0,0,0,2,0,0,0,0,0,0,0,2];
   // this.board = [2,2,4,8,16,32,64,128,256,512,1024,1024,0,0,0,2];
   this.grid = this.toGrid();
+  this.score = 0;
 };
 
 Game.prototype.generateBoard = function() {
@@ -61,15 +62,14 @@ Game.prototype.removeZerosAndAddPairs = function() {
   for (var i = 0; i < 4; i++) {
     for (var j = 0; j < 4; j++) {
       if (this.grid[i][j] === this.grid[i][j + 1]) {
-        var score = (this.grid[i][j + 1] * 2);
-        // console.log(score);
+        // if this.grid[i][j] is not zero and not undefined, then record the score
+        this.score = (this.grid[i][j + 1]); // double this to get accurate score
         this.grid[i][j] = (this.grid[i][j + 1] * 2);
         this.grid[i].splice(j + 1, 1);
+        console.log(this.score);
       }
     }
   }
-  console.log(score);
-  return score;
 }
 
 Game.prototype.collectEmptyCells = function(){
