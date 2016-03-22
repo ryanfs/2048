@@ -62,11 +62,11 @@ Game.prototype.removeZerosAndAddPairs = function() {
   for (var i = 0; i < 4; i++) {
     for (var j = 0; j < 4; j++) {
       if (this.grid[i][j] === this.grid[i][j + 1]) {
-        // if this.grid[i][j] is not zero and not undefined, then record the score
-        this.score = (this.grid[i][j + 1]); // double this to get accurate score
+        var points = (this.grid[i][j + 1]) * 2;
         this.grid[i][j] = (this.grid[i][j + 1] * 2);
         this.grid[i].splice(j + 1, 1);
-        console.log(this.score);
+        if (Number.isInteger(points)) {this.score += points;}
+        console.log(this.score.toString());
       }
     }
   }
@@ -122,6 +122,7 @@ Game.prototype.moveLeft = function() {
     this.placeRandomTwoFour();
   }
   this.showNumbers();
+  $('#score').html(this.score);
 };
 
 Game.prototype.moveRight = function() {
