@@ -1,4 +1,4 @@
-# [2048 in Color](git@github.com:ryanfs/2048.git)
+# [2048 in Color](http://ryanfs.github.io/2048/)
 
 * JavaScript interface independent of a backend.
 * Uses a functional JS model independent of the interface.
